@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@700;800;900&display=swap');
+@import "tailwindcss";
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-bg-primary: #050a17;
+    --color-bg-secondary: #080d1b;
+    --color-bg-card: #0e1629;
+
+    --color-text-primary: #F8FAFC;
+    --color-text-secondary: #c8d6e8;
+    --color-text-muted: #9aafc7;
+
+    --color-accent-green: #22c55e;
+    --color-accent-green-dark: #16a34a;
+    --color-accent-green-light: #4ade80;
+    --color-accent-red: #EF4444;
+
+    --color-border-subtle: #1e2a42;
+
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* Responsive slider vars */
+    --card-width: 800px;
+    --card-gap: 40px; /* 20px * 2 offset */
+}
+
+@media (max-width: 768px) {
+    :root {
+        --card-width: 85vw;
+        --card-gap: 20px;
+    }
+    .section-inner {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .desktop-nav {
+        display: none !important;
+    }
+    .mobile-toggle {
+        display: block !important;
+    }
+    .header-cta {
+        display: none !important;
+    }
+    .mobile-nav-hide {
+        display: none !important;
+    }
+    .section-padding {
+        padding-top: 60px !important;
+        padding-bottom: 60px !important;
+    }
+}
+
+body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ── Section wrapper utility ── */
+.section-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+/* ── CTA Button Animation ── */
+.btn-cta {
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.btn-cta:hover {
+    transform: scale(1.02) translateY(-2px);
+    box-shadow: 0 0 40px 6px rgba(34, 197, 94, 0.3);
+}
+
+/* ── Marquee Animation ── */
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.marquee-track {
+    animation: marquee 20s linear infinite;
+    width: max-content;
+}
+
+/* ── Case Study Card Hover ── */
+.case-study-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.case-study-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 24px 60px -12px rgba(34, 197, 94, 0.15), 0 8px 24px rgba(0, 0, 0, 0.4);
+    border-color: rgba(34, 197, 94, 0.35) !important;
+}
+
+.case-study-card:hover img {
+    transform: scale(1.05);
+}
