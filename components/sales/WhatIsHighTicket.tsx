@@ -12,8 +12,8 @@ const benefits = [
 
 export function WhatIsHighTicket() {
     return (
-        <section style={{ width: "100%", backgroundColor: "#050a17", paddingTop: "100px", paddingBottom: "100px", borderTop: "1px solid #1e2a42" }}>
-            <div className="section-inner" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "64px", alignItems: "center" }}>
+        <section className="section-padding" style={{ width: "100%", backgroundColor: "#050a17", borderTop: "1px solid #1e2a42" }}>
+            <div className="section-inner high-ticket-grid">
 
                 {/* Left Column */}
                 <div>
@@ -32,13 +32,13 @@ export function WhatIsHighTicket() {
                         </span>
                     </div>
                     <div style={{ display: "flex", flexDirection: "column", gap: "18px", fontSize: "17px", color: "rgba(255,255,255,0.88)", lineHeight: 1.7, fontWeight: 500 }}>
-                        <p>You're a B2B saas/agency founder whose growth depends entirely on who happens to refer you this month. You have no system for generating clients on demand.</p>
-                        <p>You don't need another marketing tactic that sounds good on paper. You need a repeatable pipeline that puts qualified buyers in front of you every single month.</p>
+                        <p>You&apos;re a B2B saas/agency founder whose growth depends entirely on who happens to refer you this month. You have no system for generating clients on demand.</p>
+                        <p>You don&apos;t need another marketing tactic that sounds good on paper. You need a repeatable pipeline that puts qualified buyers in front of you every single month.</p>
                     </div>
                 </div>
 
                 {/* Right Column: Checklist Card */}
-                <div style={{
+                <div className="mobile-card-padding" style={{
                     backgroundColor: "#0e1629",
                     border: "1px solid #1e2a42",
                     borderRadius: "24px",

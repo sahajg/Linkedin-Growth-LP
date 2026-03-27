@@ -7,11 +7,10 @@ export function Booking() {
     return (
         <section
             id="book-call"
+            className="section-padding"
             style={{
                 width: "100%",
                 backgroundColor: "#050a17",
-                paddingTop: "100px",
-                paddingBottom: "100px",
                 borderTop: "1px solid #1e2a42",
             }}
         >
@@ -56,9 +55,8 @@ export function Booking() {
                     }}
                 >
                     <div 
-                        className="calendly-inline-widget" 
+                        className="calendly-inline-widget booking-calendly" 
                         data-url="https://calendly.com/sahaj10x/zoom-meeting" 
-                        style={{ minWidth: "320px", height: "700px" }}
                     />
                     <Script 
                         src="https://assets.calendly.com/assets/external/widget.js" 

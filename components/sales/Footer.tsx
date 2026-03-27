@@ -10,7 +10,7 @@ export function Footer() {
                 <p style={{ fontSize: "14px", color: "#64748B", fontWeight: 500, margin: 0 }}>
                     &copy; {new Date().getFullYear()} DAVRO AI. All rights reserved.
                 </p>
-                <div style={{ display: "flex", gap: "32px", fontSize: "13px", color: "#64748B", fontWeight: 600 }}>
+                <div style={{ display: "flex", gap: "32px", fontSize: "13px", color: "#64748B", fontWeight: 600, flexWrap: "wrap", justifyContent: "center" }}>
                     <span style={{ cursor: "pointer" }}>Privacy Policy</span>
                     <span style={{ cursor: "pointer" }}>Terms of Service</span>
                     <span style={{ cursor: "pointer" }}>Disclaimer</span>

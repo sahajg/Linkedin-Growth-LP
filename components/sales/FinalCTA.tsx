@@ -2,7 +2,7 @@ import React from "react";
 
 export function FinalCTA() {
     return (
-        <section style={{ width: "100%", backgroundColor: "#080d1b", paddingTop: "120px", paddingBottom: "120px", textAlign: "center", position: "relative", overflow: "hidden", borderTop: "1px solid #1e2a42" }}>
+        <section className="section-padding" style={{ width: "100%", backgroundColor: "#080d1b", textAlign: "center", position: "relative", overflow: "hidden", borderTop: "1px solid #1e2a42" }}>
             <div style={{
                 position: "absolute", bottom: 0, left: "50%", transform: "translateX(-50%)",
                 width: "800px", height: "300px",

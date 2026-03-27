@@ -31,12 +31,18 @@ html {
 
 @media (max-width: 768px) {
     :root {
-        --card-width: 85vw;
-        --card-gap: 20px;
+        --card-width: 92vw;
+        --card-gap: 16px;
     }
     .section-inner {
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .mobile-card-padding {
+        padding: 24px !important;
+    }
+    .case-study-card-inner {
+        padding: 24px !important;
     }
     .desktop-nav {
         display: none !important;
@@ -111,4 +117,138 @@ body {
 
 .case-study-card:hover img {
     transform: scale(1.05);
+}
+
+/* ── Hero & Shared Section Paddings ── */
+.hero-section, .section-padding {
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.hero-content-gap {
+    gap: 32px;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding-top: 80px !important;
+        padding-bottom: 60px !important;
+    }
+    .section-padding {
+        padding-top: 60px !important;
+        padding-bottom: 60px !important;
+    }
+    .hero-content-gap {
+        gap: 24px !important;
+    }
+}
+
+/* ── WhatIsHighTicket Section Mobile Fixes ── */
+.high-ticket-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 64px;
+    align-items: center;
+}
+
+@media (max-width: 1024px) {
+    .high-ticket-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-card-padding {
+        padding: 24px !important;
+    }
+    .case-study-card-inner {
+        padding: 24px !important;
+    }
+}
+
+/* ── OldVsNew Section Mobile Fixes ── */
+.old-vs-new-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+@media (max-width: 768px) {
+    .old-vs-new-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ── HowWeWork Section Mobile Fixes ── */
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2px;
+}
+
+@media (max-width: 768px) {
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ── FAQ Section Mobile Fixes ── */
+.faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.faq-sidebar {
+    position: sticky;
+    top: 100px;
+}
+
+@media (max-width: 1024px) {
+    .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+    .faq-sidebar {
+        position: relative;
+        top: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.case-study-card-inner {
+    padding: 48px;
+}
+
+@media (max-width: 768px) {
+    .case-study-card-inner {
+        padding: 24px !important;
+    }
+}
+
+.mobile-nav-hide {
+    display: flex;
+}
+
+@media (max-width: 1024px) {
+    .mobile-nav-hide {
+        display: none !important;
+    }
+}
+
+/* ── Booking Section Mobile Fixes ── */
+.booking-calendly {
+    width: 100%;
+    height: 700px;
+}
+
+@media (max-width: 768px) {
+    .booking-calendly {
+        min-width: 100% !important;
+    }
 }

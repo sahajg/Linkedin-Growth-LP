@@ -3,7 +3,7 @@ import { Play } from "lucide-react";
 
 export function Hero() {
     return (
-        <section style={{ width: "100%", backgroundColor: "#050a17", paddingTop: "140px", paddingBottom: "140px", position: "relative", overflow: "hidden" }}>
+        <section className="hero-section" style={{ width: "100%", backgroundColor: "#050a17", position: "relative", overflow: "hidden" }}>
             {/* Primary green radial glow - top center */}
             <div style={{
                 position: "absolute", top: 0, left: "50%", transform: "translateX(-50%)",
@@ -19,7 +19,7 @@ export function Hero() {
                 filter: "blur(80px)", pointerEvents: "none",
             }} />
 
-            <div className="section-inner" style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center", gap: "32px" }}>
+            <div className="section-inner hero-content-gap" style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center" }}>
 
                 {/* Eyebrow label */}
                 <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", backgroundColor: "rgba(234,179,8,0.1)", border: "1px solid rgba(234,179,8,0.3)", borderRadius: "999px", padding: "6px 16px" }}>

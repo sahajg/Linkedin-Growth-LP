@@ -37,7 +37,7 @@ const deliverables = [
 
 export function OfferStack() {
     return (
-        <section id="results" style={{ width: "100%", backgroundColor: "#080d1b", paddingTop: "100px", paddingBottom: "100px", borderTop: "1px solid #1e2a42" }}>
+        <section id="results" className="section-padding" style={{ width: "100%", backgroundColor: "#080d1b", borderTop: "1px solid #1e2a42" }}>
             <div className="section-inner" style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
 
                 <h2 style={{
@@ -101,7 +101,7 @@ export function OfferStack() {
                 </div>
 
                 {/* Offer highlight + CTA */}
-                <div style={{
+                <div className="mobile-card-padding" style={{
                     marginTop: "64px",
                     backgroundColor: "rgba(34,197,94,0.06)",
                     border: "1px solid rgba(34,197,94,0.22)",

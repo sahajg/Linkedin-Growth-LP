@@ -109,7 +109,7 @@ export function CaseStudyGallery() {
     const prev = () => setActiveIndex((prev) => (prev - 1 + caseStudies.length) % caseStudies.length);
 
     return (
-        <section id="results" className="section-padding" style={{ width: "100%", backgroundColor: "#050a17", paddingTop: "120px", paddingBottom: "120px", borderTop: "1px solid #1e2a42", overflow: "hidden" }}>
+        <section id="results" className="section-padding" style={{ width: "100%", backgroundColor: "#050a17", borderTop: "1px solid #1e2a42" }}>
             <div className="section-inner">
                 <div style={{ textAlign: "center", marginBottom: "64px" }}>
                     <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(28px, 6vw, 56px)", fontWeight: 900, color: "#ffffff", letterSpacing: "-0.03em", lineHeight: 1.1 }}>
@@ -124,7 +124,7 @@ export function CaseStudyGallery() {
                     
                     {/* Navigation Arrows */}
                     <button className="mobile-nav-hide" onClick={prev} style={{
-                        position: "absolute", left: "20px", zIndex: 10,
+                        position: "absolute", left: "40px", zIndex: 10,
                         width: "56px", height: "56px", borderRadius: "50%",
                         backgroundColor: "rgba(255,255,255,0.05)", backdropFilter: "blur(10px)",
                         border: "1px solid rgba(255,255,255,0.1)", color: "#ffffff",
@@ -136,7 +136,7 @@ export function CaseStudyGallery() {
                     </button>
 
                     <button className="mobile-nav-hide" onClick={next} style={{
-                        position: "absolute", right: "20px", zIndex: 10,
+                        position: "absolute", right: "40px", zIndex: 10,
                         width: "56px", height: "56px", borderRadius: "50%",
                         backgroundColor: "rgba(255,255,255,0.05)", backdropFilter: "blur(10px)",
                         border: "1px solid rgba(255,255,255,0.1)", color: "#ffffff",
@@ -167,19 +167,17 @@ export function CaseStudyGallery() {
                                     filter: isActive ? "none" : "blur(2px)",
                                     flexShrink: 0
                                 }}>
-                                    <div className="case-study-card" style={{
+                                    <div className="case-study-card case-study-card-inner" style={{
                                         width: "100%",
                                         background: "linear-gradient(135deg, rgba(8, 13, 27, 0.95) 0%, rgba(14, 22, 41, 0.95) 100%)",
                                         border: isActive ? "1px solid rgba(34, 197, 94, 0.5)" : "1px solid rgba(255,255,255,0.05)",
                                         borderRadius: "32px",
-                                        padding: "48px",
                                         boxShadow: isActive ? "0 40px 100px -20px rgba(34, 197, 94, 0.2)" : "none",
-                                        minHeight: "520px",
+                                        minHeight: "550px",
                                         display: "flex",
                                         flexDirection: "column",
                                         justifyContent: "center",
                                         position: "relative",
-                                        overflow: "hidden"
                                     }}>
                                         {/* Content inside the card remains same */}
                                         {/* Card Content (Same as before but condensed) */}

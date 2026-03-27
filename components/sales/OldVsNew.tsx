@@ -3,7 +3,7 @@ import { X, Check } from "lucide-react";
 
 export function OldVsNew() {
     return (
-        <section id="why-us" className="section-padding" style={{ width: "100%", backgroundColor: "#080d1b", paddingTop: "100px", paddingBottom: "100px", borderTop: "1px solid #1e2a42" }}>
+        <section id="why-us" className="section-padding" style={{ width: "100%", backgroundColor: "#080d1b", borderTop: "1px solid #1e2a42" }}>
             <div className="section-inner">
                 <h2 style={{
                     fontFamily: "var(--font-heading)", fontSize: "clamp(28px, 3.5vw, 48px)",
@@ -13,10 +13,10 @@ export function OldVsNew() {
                     Stop Leaving Money on the Table
                 </h2>
 
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px" }}>
+                <div className="old-vs-new-grid">
 
                     {/* Before Davro */}
-                    <div style={{
+                    <div className="mobile-card-padding" style={{
                         backgroundColor: "rgba(127,29,29,0.2)",
                         border: "1px solid rgba(239,68,68,0.25)",
                         borderTop: "3px solid rgba(239,68,68,0.6)",
@@ -43,12 +43,12 @@ export function OldVsNew() {
                     </div>
 
                     {/* After Davro */}
-                    <div style={{
+                    <div className="mobile-card-padding" style={{
                         backgroundColor: "rgba(6,78,59,0.2)",
                         border: "1px solid rgba(34,197,94,0.3)",
                         borderTop: "3px solid rgba(34,197,94,0.6)",
                         borderRadius: "20px", padding: "40px",
-                        position: "relative", overflow: "hidden",
+                        position: "relative",
                         boxShadow: "0 0 50px -10px rgba(34,197,94,0.12), 0 4px 24px rgba(0,0,0,0.3)",
                     }}>
                         <div style={{

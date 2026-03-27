@@ -35,7 +35,7 @@ const steps = [
 
 export function HowWeWork() {
     return (
-        <section id="process" style={{ width: "100%", backgroundColor: "#050a17", paddingTop: "100px", paddingBottom: "100px", borderTop: "1px solid #1e2a42" }}>
+        <section id="process" className="section-padding" style={{ width: "100%", backgroundColor: "#050a17", borderTop: "1px solid #1e2a42" }}>
             <div className="section-inner">
 
                 {/* Header */}
@@ -56,17 +56,13 @@ export function HowWeWork() {
                 </div>
 
                 {/* Steps: 2-column grid */}
-                <div style={{
-                    display: "grid",
-                    gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
-                    gap: "2px",
+                <div className="process-grid" style={{
                     backgroundColor: "#1a2035",
                     borderRadius: "24px",
-                    overflow: "hidden",
                     border: "1px solid #1e2a42",
                 }}>
                     {steps.map((step, idx) => (
-                        <div key={idx} style={{
+                        <div key={idx} className="mobile-card-padding" style={{
                             backgroundColor: "#080d1b",
                             padding: "40px",
                             display: "flex",

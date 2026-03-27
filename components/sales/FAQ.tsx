@@ -45,11 +45,11 @@ export function FAQ() {
     };
 
     return (
-        <section id="faqs" style={{ width: "100%", backgroundColor: "#050a17", paddingTop: "100px", paddingBottom: "100px", borderTop: "1px solid #1e2a42" }}>
-            <div className="section-inner" style={{ display: "grid", gridTemplateColumns: "1fr 1.6fr", gap: "80px", alignItems: "start" }}>
+        <section id="faqs" className="section-padding" style={{ width: "100%", backgroundColor: "#050a17", borderTop: "1px solid #1e2a42" }}>
+            <div className="section-inner faq-grid">
 
                 {/* Left: Heading */}
-                <div style={{ position: "sticky", top: "100px" }}>
+                <div className="faq-sidebar">
                     <h2 style={{
                         fontFamily: "var(--font-heading)",
                         fontSize: "clamp(36px, 4vw, 56px)",
@@ -118,7 +118,7 @@ export function FAQ() {
 
                                 {/* Answer: shown when open */}
                                 {isOpen && (
-                                    <div style={{ padding: "0 24px 22px 24px" }}>
+                                    <div className="mobile-card-padding" style={{ padding: "0 24px 22px 24px" }}>
                                         <p style={{
                                             fontSize: "15px",
                                             fontWeight: 500,
