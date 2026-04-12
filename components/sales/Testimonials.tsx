@@ -60,7 +60,7 @@ export function Testimonials() {
           </p>
         </div>
 
-        <div style={{ 
+        <div className="testimonials-grid" style={{ 
           display: "grid", 
           gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))", 
           gap: "24px",

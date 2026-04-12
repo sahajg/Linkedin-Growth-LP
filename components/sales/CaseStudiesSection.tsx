@@ -121,7 +121,7 @@ export function CaseStudiesSection() {
             </p>
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(360px, 1fr))", gap: "32px" }}>
+        <div className="case-studies-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(360px, 1fr))", gap: "32px" }}>
           {caseStudies.map((cs) => (
             <div
               key={cs.slug}

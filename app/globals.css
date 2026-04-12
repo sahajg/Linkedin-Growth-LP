@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@700;800;900&display=swap');
 @import "tailwindcss";
 
-html {
+html, body {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 :root {
@@ -140,6 +142,21 @@ body {
     }
     .hero-content-gap {
         gap: 24px !important;
+    }
+    /* Blogs section: reduce heading gap on mobile */
+    .blogs-heading-gap {
+        margin-bottom: 32px !important;
+    }
+    /* Fix grid overflow on small screens */
+    .case-studies-grid {
+        grid-template-columns: 1fr !important;
+    }
+    .testimonials-grid {
+        grid-template-columns: 1fr !important;
+    }
+    /* Hero image: reduce padding on mobile */
+    .hero-image-container {
+        padding: 24px 16px !important;
     }
 }
 

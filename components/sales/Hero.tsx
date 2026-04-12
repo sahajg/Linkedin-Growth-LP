@@ -88,7 +88,7 @@ export function Hero() {
                     backgroundColor: "#ffffff", // Whiteboard background
                     position: "relative"
                 }}>
-                    <div style={{ padding: "80px 60px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                    <div className="hero-image-container" style={{ padding: "80px 60px", display: "flex", justifyContent: "center", alignItems: "center" }}>
                         <img 
                           src="/linkedin-vsl.png" 
                           alt="LinkedIn Inbound Client Acquisition Funnel" 
