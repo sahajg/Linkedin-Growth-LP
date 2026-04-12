@@ -3,11 +3,11 @@ import { X, Check } from "lucide-react";
 
 export function OldVsNew() {
     return (
-        <section id="why-us" className="section-padding" style={{ width: "100%", backgroundColor: "#080d1b", borderTop: "1px solid #1e2a42" }}>
+        <section id="why-us" className="section-padding" style={{ width: "100%", backgroundColor: "#ffffff", borderTop: "1px solid #f3f4f6" }}>
             <div className="section-inner">
                 <h2 style={{
                     fontFamily: "var(--font-heading)", fontSize: "clamp(28px, 3.5vw, 48px)",
-                    fontWeight: 900, color: "#ffffff", textAlign: "center",
+                    fontWeight: 900, color: "#000000", textAlign: "center",
                     letterSpacing: "-0.02em", marginBottom: "56px",
                 }}>
                     Stop Leaving Money on the Table
@@ -17,13 +17,13 @@ export function OldVsNew() {
 
                     {/* Before Davro */}
                     <div className="mobile-card-padding" style={{
-                        backgroundColor: "rgba(127,29,29,0.2)",
-                        border: "1px solid rgba(239,68,68,0.25)",
+                        backgroundColor: "rgba(239,68,68,0.06)",
+                        border: "1px solid rgba(239,68,68,0.2)",
                         borderTop: "3px solid rgba(239,68,68,0.6)",
                         borderRadius: "20px", padding: "40px",
-                        boxShadow: "0 4px 24px rgba(0,0,0,0.3)",
+                        boxShadow: "0 10px 30px -10px rgba(220, 38, 38, 0.1)",
                     }}>
-                        <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "24px", fontWeight: 800, color: "#f87171", marginBottom: "28px", letterSpacing: "-0.01em" }}>
+                        <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "24px", fontWeight: 800, color: "#000000ff", marginBottom: "28px", letterSpacing: "-0.01em" }}>
                             Before Davro
                         </h3>
                         <ul style={{ display: "flex", flexDirection: "column", gap: "18px", listStyle: "none", padding: 0, margin: 0 }}>
@@ -35,8 +35,8 @@ export function OldVsNew() {
                                 "Watching competitors build authority and attract inbound leads while you stay invisible",
                             ].map((item, idx) => (
                                 <li key={idx} style={{ display: "flex", alignItems: "flex-start", gap: "12px" }}>
-                                    <X style={{ width: "18px", height: "18px", color: "#f87171", flexShrink: 0, marginTop: "2px" }} strokeWidth={3} />
-                                    <span style={{ fontSize: "16px", color: "rgba(254,202,202,0.85)", fontWeight: 500, lineHeight: 1.55 }}>{item}</span>
+                                    <X style={{ width: "18px", height: "18px", color: "#ff0000ff", flexShrink: 0, marginTop: "2px" }} strokeWidth={3} />
+                                    <span style={{ fontSize: "16px", color: "#000000ff", fontWeight: 600, lineHeight: 1.55 }}>{item}</span>
                                 </li>
                             ))}
                         </ul>
@@ -44,12 +44,12 @@ export function OldVsNew() {
 
                     {/* After Davro */}
                     <div className="mobile-card-padding" style={{
-                        backgroundColor: "rgba(6,78,59,0.2)",
-                        border: "1px solid rgba(34,197,94,0.3)",
+                        backgroundColor: "rgba(34,197,94,0.06)",
+                        border: "1px solid rgba(34,197,94,0.2)",
                         borderTop: "3px solid rgba(34,197,94,0.6)",
                         borderRadius: "20px", padding: "40px",
                         position: "relative",
-                        boxShadow: "0 0 50px -10px rgba(34,197,94,0.12), 0 4px 24px rgba(0,0,0,0.3)",
+                        boxShadow: "0 10px 30px -10px rgba(34,197,94,0.15)",
                     }}>
                         <div style={{
                             position: "absolute", top: 0, right: 0,
@@ -60,7 +60,7 @@ export function OldVsNew() {
                         }}>
                             Recommended
                         </div>
-                        <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "24px", fontWeight: 800, color: "#4ade80", marginBottom: "28px", letterSpacing: "-0.01em" }}>
+                        <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "24px", fontWeight: 800, color: "#000000ff", marginBottom: "28px", letterSpacing: "-0.01em" }}>
                             After Davro
                         </h3>
                         <ul style={{ display: "flex", flexDirection: "column", gap: "18px", listStyle: "none", padding: 0, margin: 0 }}>
@@ -72,8 +72,8 @@ export function OldVsNew() {
                                 "A client pipeline that runs without you having to chase, pitch, or cold message anyone",
                             ].map((item, idx) => (
                                 <li key={idx} style={{ display: "flex", alignItems: "flex-start", gap: "12px" }}>
-                                    <Check style={{ width: "18px", height: "18px", color: "#4ade80", flexShrink: 0, marginTop: "2px" }} strokeWidth={3} />
-                                    <span style={{ fontSize: "16px", color: "#ffffff", fontWeight: 600, lineHeight: 1.55 }}>{item}</span>
+                                    <Check style={{ width: "18px", height: "18px", color: "#00ff59ff", flexShrink: 0, marginTop: "2px" }} strokeWidth={3} />
+                                    <span style={{ fontSize: "16px", color: "#000000ff", fontWeight: 600, lineHeight: 1.55 }}>{item}</span>
                                 </li>
                             ))}
                         </ul>

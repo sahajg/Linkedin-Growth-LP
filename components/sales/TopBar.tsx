@@ -3,10 +3,12 @@ import { TrendingUp, Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const navLinks = [
-    { label: "Why Us", href: "#why-us" },
-    { label: "Process", href: "#process" },
-    { label: "Results", href: "#results" },
-    { label: "FAQs", href: "#faqs" },
+    { label: "Home", href: "/#home" },
+    { label: "Why Us", href: "/#why-us" },
+    { label: "Case Studies", href: "/#case-studies" },
+    { label: "Process", href: "/#process" },
+    { label: "Blogs", href: "/#blogs" },
+    { label: "FAQs", href: "/#faqs" },
 ];
 
 export function TopBar() {

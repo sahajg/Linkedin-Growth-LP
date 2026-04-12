@@ -2,7 +2,7 @@ import React from "react";
 
 export function Footer() {
     return (
-        <footer style={{ width: "100%", backgroundColor: "#050a17", borderTop: "1px solid #1e2a42", padding: "48px 0" }}>
+        <footer style={{ width: "100%", backgroundColor: "#0F1014", borderTop: "1px solid #1f2026", padding: "48px 0" }}>
             <div className="section-inner" style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "20px" }}>
                 <span style={{ fontFamily: "var(--font-heading)", fontSize: "20px", fontWeight: 900, letterSpacing: "-0.04em", color: "#ffffff" }}>
                     DAVRO

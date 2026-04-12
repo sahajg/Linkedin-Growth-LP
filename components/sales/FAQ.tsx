@@ -45,7 +45,7 @@ export function FAQ() {
     };
 
     return (
-        <section id="faqs" className="section-padding" style={{ width: "100%", backgroundColor: "#050a17", borderTop: "1px solid #1e2a42" }}>
+        <section id="faqs" className="section-padding" style={{ width: "100%", backgroundColor: "#ffffff", borderTop: "1px solid #f3f4f6" }}>
             <div className="section-inner faq-grid">
 
                 {/* Left: Heading */}
@@ -54,14 +54,14 @@ export function FAQ() {
                         fontFamily: "var(--font-heading)",
                         fontSize: "clamp(36px, 4vw, 56px)",
                         fontWeight: 900,
-                        color: "#ffffff",
+                        color: "#0f172a",
                         lineHeight: 1.1,
                         letterSpacing: "-0.03em",
                         margin: 0,
                     }}>
                         Frequently<br />Asked<br />Questions
                     </h2>
-                    <div style={{ width: "48px", height: "3px", backgroundColor: "#22c55e", borderRadius: "2px", marginTop: "24px" }} />
+                    <div style={{ width: "48px", height: "3.5px", backgroundColor: "#16a34a", borderRadius: "100px", marginTop: "24px" }} />
                 </div>
 
                 {/* Right: Accordion */}
@@ -72,12 +72,12 @@ export function FAQ() {
                             <div
                                 key={idx}
                                 style={{
-                                    borderRadius: "10px",
-                                    border: `1px solid ${isOpen ? "rgba(34,197,94,0.35)" : "#1e2a42"}`,
-                                    marginBottom: "10px",
-                                    backgroundColor: isOpen ? "rgba(34,197,94,0.05)" : "#0e1629",
+                                    borderRadius: "16px",
+                                    border: `1px solid ${isOpen ? "rgba(34,197,94,0.3)" : "#e2e8f0"}`,
+                                    marginBottom: "12px",
+                                    backgroundColor: isOpen ? "rgba(34,197,94,0.04)" : "#f8fafc",
                                     overflow: "hidden",
-                                    transition: "border-color 0.2s ease, background-color 0.2s ease",
+                                    transition: "all 0.25s cubic-bezier(0.4, 0, 0.2, 1)",
                                 }}
                             >
                                 {/* Question row */}
@@ -88,7 +88,7 @@ export function FAQ() {
                                         display: "flex",
                                         alignItems: "center",
                                         justifyContent: "space-between",
-                                        padding: "20px 24px",
+                                        padding: "24px 32px",
                                         background: "none",
                                         border: "none",
                                         cursor: "pointer",
@@ -97,39 +97,51 @@ export function FAQ() {
                                     }}
                                 >
                                     <span style={{
-                                        fontSize: "16px",
-                                        fontWeight: 600,
-                                        color: isOpen ? "#ffffff" : "rgba(255,255,255,0.85)",
+                                        fontSize: "17px",
+                                        fontWeight: 700,
+                                        color: isOpen ? "#16a34a" : "#0f172a",
                                         lineHeight: 1.4,
                                         flex: 1,
                                     }}>
                                         {faq.question}
                                     </span>
-                                    <ChevronRight
-                                        style={{
-                                            width: "18px", height: "18px",
-                                            color: isOpen ? "#22c55e" : "#6b7fa0",
-                                            flexShrink: 0,
-                                            transform: isOpen ? "rotate(90deg)" : "rotate(0deg)",
-                                            transition: "transform 0.25s ease, color 0.2s ease",
-                                        }}
-                                    />
+                                    <div style={{
+                                        width: "28px", height: "28px", 
+                                        borderRadius: "50%",
+                                        backgroundColor: isOpen ? "rgba(34,197,94,0.1)" : "rgba(100,116,139,0.05)",
+                                        display: "flex", alignItems: "center", justifyContent: "center",
+                                        transition: "all 0.25s ease"
+                                    }}>
+                                        <ChevronRight
+                                            style={{
+                                                width: "18px", height: "18px",
+                                                color: isOpen ? "#16a34a" : "#64748b",
+                                                transform: isOpen ? "rotate(90deg)" : "rotate(0deg)",
+                                                transition: "transform 0.25s cubic-bezier(0.4, 0, 0.2, 1)",
+                                            }}
+                                        />
+                                    </div>
                                 </button>
 
                                 {/* Answer: shown when open */}
-                                {isOpen && (
-                                    <div className="mobile-card-padding" style={{ padding: "0 24px 22px 24px" }}>
+                                <div style={{ 
+                                    maxHeight: isOpen ? "500px" : "0",
+                                    opacity: isOpen ? 1 : 0,
+                                    transition: "all 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+                                    overflow: "hidden"
+                                }}>
+                                    <div className="mobile-card-padding" style={{ padding: "0 32px 28px 32px" }}>
                                         <p style={{
-                                            fontSize: "15px",
+                                            fontSize: "15.5px",
                                             fontWeight: 500,
-                                            color: "rgba(255,255,255,0.88)",
+                                            color: "#475569",
                                             lineHeight: 1.75,
                                             margin: 0,
                                         }}>
                                             {faq.answer}
                                         </p>
                                     </div>
-                                )}
+                                </div>
                             </div>
                         );
                     })}

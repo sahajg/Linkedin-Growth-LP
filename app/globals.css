@@ -252,3 +252,24 @@ body {
         min-width: 100% !important;
     }
 }
+
+/* ── Case Study Detail Page ── */
+@media (max-width: 768px) {
+    .cs-metrics-strip {
+        grid-template-columns: 1fr !important;
+    }
+    .cs-metrics-strip > div {
+        border-right: none !important;
+        border-bottom: 1px solid #1e2a42;
+        padding: 32px 24px !important;
+    }
+    .cs-metrics-strip > div:last-child {
+        border-bottom: none;
+    }
+    .cs-step-card {
+        padding: 24px !important;
+    }
+    .cs-cta-box {
+        padding: 36px 24px !important;
+    }
+}

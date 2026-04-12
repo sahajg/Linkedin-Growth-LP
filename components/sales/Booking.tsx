@@ -10,8 +10,8 @@ export function Booking() {
             className="section-padding"
             style={{
                 width: "100%",
-                backgroundColor: "#050a17",
-                borderTop: "1px solid #1e2a42",
+                backgroundColor: "#0F1014",
+                borderTop: "1px solid #1f2026",
             }}
         >
             <div className="section-inner">
@@ -45,22 +45,26 @@ export function Booking() {
                 </div>
 
                 {/* Calendly Inline Widget */}
-                <div 
-                    style={{ 
-                        backgroundColor: "#080d1b", 
-                        borderRadius: "24px", 
-                        overflow: "hidden", 
-                        border: "1px solid #1e2a42",
+                <div
+                    style={{
+                        backgroundColor: "#16171D",
+                        borderRadius: "24px",
+                        overflow: "hidden",
+                        border: "1px solid #1f2026",
                         boxShadow: "0 20px 50px rgba(0,0,0,0.3)"
                     }}
                 >
-                    <div 
-                        className="calendly-inline-widget booking-calendly" 
-                        data-url="https://calendly.com/sahaj10x/zoom-meeting" 
+                    <div
+                        className="calendly-inline-widget"
+                        data-url="https://calendly.com/bookurl/linkedin-growth?hide_gdpr_banner=1"
+                        style={{ minWidth: "320px", height: "700px" }}
                     />
-                    <Script 
-                        src="https://assets.calendly.com/assets/external/widget.js" 
+                    <Script
+                        src="https://assets.calendly.com/assets/external/widget.js"
                         strategy="lazyOnload"
+                        onLoad={() => {
+                            console.log("Calendly Script Loaded");
+                        }}
                     />
                 </div>
             </div>

@@ -82,19 +82,19 @@ const caseStudies = [
             <>
                 <p>April Dunford runs Ambient Strategy (Consulting) a positioning consultancy company that works with saas companies. April built authority in positioning strategy by publishing detailed frameworks and breakdowns of product messaging failures. Instead of promoting services directly, she educated founders on how positioning errors destroyed growth. As awareness increased, inbound demand followed Companies approached her, already convinced of the need.</p>
                 <div style={{ backgroundColor: "rgba(34, 197, 94, 0.04)", border: "1px solid rgba(34, 197, 94, 0.15)", borderRadius: "16px", padding: "20px", marginTop: "12px" }}>
-                   <h4 style={{ color: "#22c55e", fontSize: "14px", fontWeight: 800, marginBottom: "12px", textTransform: "uppercase" }}>Result</h4>
-                   <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "10px" }}>
-                      {[
-                          "Consulting pipeline driven primarily through inbound demand", 
-                          "High-ticket positioning engagements sourced directly from content visibility", 
-                          "Prospects arrived pre-educated, reducing the need for heavy persuasion during sales conversations",
-                          "Established strong authority within the B2B SaaS ecosystem as a recognized expert in positioning strategy"
-                      ].map((r, i) => (
-                          <li key={i} style={{ display: "flex", alignItems: "flex-start", gap: "10px", color: "#ffffff", fontWeight: 600, fontSize: "14px" }}>
-                              <Check size={14} color="#22c55e" strokeWidth={3} /> {r}
-                          </li>
-                      ))}
-                   </ul>
+                    <h4 style={{ color: "#22c55e", fontSize: "14px", fontWeight: 800, marginBottom: "12px", textTransform: "uppercase" }}>Result</h4>
+                    <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "10px" }}>
+                        {[
+                            "Consulting pipeline driven primarily through inbound demand",
+                            "High-ticket positioning engagements sourced directly from content visibility",
+                            "Prospects arrived pre-educated, reducing the need for heavy persuasion during sales conversations",
+                            "Established strong authority within the B2B SaaS ecosystem as a recognized expert in positioning strategy"
+                        ].map((r, i) => (
+                            <li key={i} style={{ display: "flex", alignItems: "flex-start", gap: "10px", color: "#ffffff", fontWeight: 600, fontSize: "14px" }}>
+                                <Check size={14} color="#22c55e" strokeWidth={3} /> {r}
+                            </li>
+                        ))}
+                    </ul>
                 </div>
             </>
         ),
@@ -102,18 +102,18 @@ const caseStudies = [
     }
 ];
 
-export function CaseStudyGallery() {
+export function Blogs() {
     const [activeIndex, setActiveIndex] = useState(0);
 
     const next = () => setActiveIndex((prev) => (prev + 1) % caseStudies.length);
     const prev = () => setActiveIndex((prev) => (prev - 1 + caseStudies.length) % caseStudies.length);
 
     return (
-        <section id="results" className="section-padding" style={{ width: "100%", backgroundColor: "#050a17", borderTop: "1px solid #1e2a42" }}>
+        <section id="blogs" className="section-padding" style={{ width: "100%", backgroundColor: "#0F1014", borderTop: "1px solid #1f2026" }}>
             <div className="section-inner">
                 <div style={{ textAlign: "center", marginBottom: "64px" }}>
                     <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(28px, 6vw, 56px)", fontWeight: 900, color: "#ffffff", letterSpacing: "-0.03em", lineHeight: 1.1 }}>
-                        LinkedIn Growth <span style={{ color: "#22c55e" }}>Results</span>
+                        <span style={{ color: "#22c55e" }}>Blogs</span>
                     </h2>
                 </div>
             </div>
@@ -121,7 +121,7 @@ export function CaseStudyGallery() {
             <div style={{ position: "relative", width: "100%", overflow: "hidden" }}>
                 {/* Carousel Container */}
                 <div style={{ position: "relative", width: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                    
+
                     {/* Navigation Arrows */}
                     <button className="mobile-nav-hide" onClick={prev} style={{
                         position: "absolute", left: "40px", zIndex: 10,
@@ -131,7 +131,7 @@ export function CaseStudyGallery() {
                         display: "flex", alignItems: "center", justifyContent: "center",
                         cursor: "pointer", transition: "all 0.2s"
                     }} onMouseEnter={e => (e.currentTarget.style.backgroundColor = "rgba(34, 197, 94, 0.2)")}
-                       onMouseLeave={e => (e.currentTarget.style.backgroundColor = "rgba(255,255,255,0.05)")}>
+                        onMouseLeave={e => (e.currentTarget.style.backgroundColor = "rgba(255,255,255,0.05)")}>
                         <ChevronLeft size={24} />
                     </button>
 
@@ -143,7 +143,7 @@ export function CaseStudyGallery() {
                         display: "flex", alignItems: "center", justifyContent: "center",
                         cursor: "pointer", transition: "all 0.2s"
                     }} onMouseEnter={e => (e.currentTarget.style.backgroundColor = "rgba(34, 197, 94, 0.2)")}
-                       onMouseLeave={e => (e.currentTarget.style.backgroundColor = "rgba(255,255,255,0.05)")}>
+                        onMouseLeave={e => (e.currentTarget.style.backgroundColor = "rgba(255,255,255,0.05)")}>
                         <ChevronRight size={24} />
                     </button>
 
@@ -169,7 +169,7 @@ export function CaseStudyGallery() {
                                 }}>
                                     <div className="case-study-card case-study-card-inner" style={{
                                         width: "100%",
-                                        background: "linear-gradient(135deg, rgba(8, 13, 27, 0.95) 0%, rgba(14, 22, 41, 0.95) 100%)",
+                                        background: "linear-gradient(135deg, rgba(15, 16, 20, 0.95) 0%, rgba(26, 27, 33, 0.95) 100%)",
                                         border: isActive ? "1px solid rgba(34, 197, 94, 0.5)" : "1px solid rgba(255,255,255,0.05)",
                                         borderRadius: "32px",
                                         boxShadow: isActive ? "0 40px 100px -20px rgba(34, 197, 94, 0.2)" : "none",
@@ -185,7 +185,7 @@ export function CaseStudyGallery() {
                                             <div style={{ backgroundColor: "rgba(34, 197, 94, 0.1)", border: "1px solid rgba(34, 197, 94, 0.25)", padding: "4px 12px", borderRadius: "6px" }}>
                                                 <span style={{ fontSize: "11px", fontWeight: 800, color: "#22c55e", letterSpacing: "0.05em", textTransform: "uppercase" }}>{study.category}</span>
                                             </div>
-                                            <span style={{ fontSize: "14px", fontWeight: 700, color: "rgba(255,255,255,0.4)" }}>{study.name}</span>
+                                            <span style={{ fontSize: "14px", fontWeight: 700, color: "#22c55e" }}>{study.name}</span>
                                         </div>
 
                                         <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(22px, 3vw, 32px)", fontWeight: 900, color: "#ffffff", marginBottom: "16px", lineHeight: 1.2 }}>{study.title}</h3>
@@ -193,8 +193,8 @@ export function CaseStudyGallery() {
                                         <div style={{ display: "flex", flexDirection: "column", gap: "8px", marginBottom: "32px" }}>
                                             {study.metrics.map((m, i) => (
                                                 <div key={i} style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                                                    {m.type === "linkedin" 
-                                                        ? <Linkedin size={16} color="#22c55e" fill="#22c55e" /> 
+                                                    {m.type === "linkedin"
+                                                        ? <Linkedin size={16} color="#22c55e" fill="#22c55e" />
                                                         : <Twitter size={16} color="#22c55e" fill="#22c55e" />
                                                     }
                                                     <span style={{ fontSize: "16px", fontWeight: 700, color: "#22c55e" }}>{m.label}</span>

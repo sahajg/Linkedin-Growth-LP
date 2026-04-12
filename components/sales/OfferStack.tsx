@@ -37,17 +37,17 @@ const deliverables = [
 
 export function OfferStack() {
     return (
-        <section id="results" className="section-padding" style={{ width: "100%", backgroundColor: "#080d1b", borderTop: "1px solid #1e2a42" }}>
+        <section id="results" className="section-padding" style={{ width: "100%", backgroundColor: "#ffffff", borderTop: "1px solid #f3f4f6" }}>
             <div className="section-inner" style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
 
                 <h2 style={{
                     fontFamily: "var(--font-heading)", fontSize: "clamp(28px, 3.5vw, 52px)",
-                    fontWeight: 900, color: "#ffffff", textAlign: "center",
+                    fontWeight: 900, color: "#000000", textAlign: "center",
                     letterSpacing: "-0.02em", marginBottom: "16px", maxWidth: "800px",
                 }}>
                     Here&apos;s What You Get
                 </h2>
-                <p style={{ fontSize: "17px", color: "#6b7fa0", fontWeight: 500, textAlign: "center", marginBottom: "64px", maxWidth: "600px" }}>
+                <p style={{ fontSize: "17px", color: "#4b5563", fontWeight: 500, textAlign: "center", marginBottom: "64px", maxWidth: "600px" }}>
                     A complete LinkedIn and Twitter distribution system built, managed, and optimized entirely on your behalf to generate qualified client meetings.
                 </p>
 
@@ -59,19 +59,19 @@ export function OfferStack() {
                             alignItems: "flex-start",
                             gap: "28px",
                             padding: "36px 0",
-                            borderBottom: idx < deliverables.length - 1 ? "1px solid #1a2035" : "none",
+                            borderBottom: idx < deliverables.length - 1 ? "1px solid #f3f4f6" : "none",
                         }}>
                             {/* Index number */}
                             <div style={{
                                 flexShrink: 0,
-                                width: "44px", height: "44px",
-                                borderRadius: "12px",
-                                backgroundColor: "rgba(34,197,94,0.1)",
-                                border: "1px solid rgba(34,197,94,0.25)",
+                                width: "60px", height: "60px",
+                                borderRadius: "50%",
+                                backgroundColor: "#e2e8f0",
                                 display: "flex", alignItems: "center", justifyContent: "center",
                                 fontFamily: "var(--font-heading)",
-                                fontSize: "15px", fontWeight: 900,
-                                color: "#22c55e",
+                                fontSize: "20px", fontWeight: 800,
+                                color: "#000000",
+                                marginTop: "4px"
                             }}>
                                 {String(idx + 1).padStart(2, "0")}
                             </div>
@@ -81,7 +81,7 @@ export function OfferStack() {
                                 <p style={{
                                     fontFamily: "var(--font-heading)",
                                     fontSize: "20px", fontWeight: 800,
-                                    color: "#ffffff",
+                                    color: "#000000",
                                     marginBottom: "10px",
                                     lineHeight: 1.3,
                                     letterSpacing: "-0.01em",
@@ -90,7 +90,7 @@ export function OfferStack() {
                                 </p>
                                 <p style={{
                                     fontSize: "16px", fontWeight: 500,
-                                    color: "rgba(255,255,255,0.82)", lineHeight: 1.75,
+                                    color: "#4b5563", lineHeight: 1.75,
                                     margin: 0,
                                 }}>
                                     {item.description}
@@ -100,27 +100,6 @@ export function OfferStack() {
                     ))}
                 </div>
 
-                {/* Offer highlight + CTA */}
-                <div className="mobile-card-padding" style={{
-                    marginTop: "64px",
-                    backgroundColor: "rgba(34,197,94,0.06)",
-                    border: "1px solid rgba(34,197,94,0.22)",
-                    borderRadius: "20px",
-                    padding: "32px 40px",
-                    textAlign: "center",
-                    maxWidth: "700px",
-                    width: "100%",
-                    marginBottom: "40px",
-                }}>
-                    <p style={{
-                        fontFamily: "var(--font-heading)",
-                        fontSize: "22px", fontWeight: 800,
-                        color: "#4ade80", margin: 0,
-                        letterSpacing: "-0.01em",
-                    }}>
-                        Everything done for you. You just show up to the meetings.
-                    </p>
-                </div>
 
                 <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
                     <a href="#book-call" className="btn-cta" style={{

@@ -35,7 +35,7 @@ const steps = [
 
 export function HowWeWork() {
     return (
-        <section id="process" className="section-padding" style={{ width: "100%", backgroundColor: "#050a17", borderTop: "1px solid #1e2a42" }}>
+        <section id="process" className="section-padding" style={{ width: "100%", backgroundColor: "#0F1014", borderTop: "1px solid #1f2026" }}>
             <div className="section-inner">
 
                 {/* Header */}
@@ -50,20 +50,20 @@ export function HowWeWork() {
                     }}>
                         How We Work
                     </h2>
-                    <p style={{ fontSize: "18px", fontWeight: 500, color: "#6b7fa0", maxWidth: "520px", margin: "0 auto", lineHeight: 1.6 }}>
+                    <p style={{ fontSize: "18px", fontWeight: 500, color: "#ffffffff", maxWidth: "520px", margin: "0 auto", lineHeight: 1.6 }}>
                         From research to qualified meetings in 6 steps. You stay focused on your business while we build the pipeline.
                     </p>
                 </div>
 
                 {/* Steps: 2-column grid */}
                 <div className="process-grid" style={{
-                    backgroundColor: "#1a2035",
+                    backgroundColor: "#1f2026",
                     borderRadius: "24px",
-                    border: "1px solid #1e2a42",
+                    border: "1px solid #24252C",
                 }}>
                     {steps.map((step, idx) => (
                         <div key={idx} className="mobile-card-padding" style={{
-                            backgroundColor: "#080d1b",
+                            backgroundColor: "#16171D",
                             padding: "40px",
                             display: "flex",
                             flexDirection: "column",
