@@ -4,6 +4,33 @@ import { ArrowRight, Twitter, Linkedin, Check, ChevronLeft, ChevronRight } from 
 
 const caseStudies = [
     {
+        category: "B2B Consultancy",
+        name: "April Dunford",
+        title: "Establishing Authority Through Positioning",
+        metrics: [{ type: "linkedin", label: "LinkedIn: ~70k" }],
+        content: (
+            <>
+                <p>April Dunford runs Ambient Strategy (Consulting) a positioning consultancy company that works with saas companies. April built authority in positioning strategy by publishing detailed frameworks and breakdowns of product messaging failures. Instead of promoting services directly, she educated founders on how positioning errors destroyed growth. As awareness increased, inbound demand followed Companies approached her, already convinced of the need.</p>
+                <div style={{ backgroundColor: "rgba(34, 197, 94, 0.04)", border: "1px solid rgba(34, 197, 94, 0.15)", borderRadius: "16px", padding: "20px", marginTop: "12px" }}>
+                    <h4 style={{ color: "#22c55e", fontSize: "14px", fontWeight: 800, marginBottom: "12px", textTransform: "uppercase" }}>Result</h4>
+                    <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "10px" }}>
+                        {[
+                            "Consulting pipeline driven primarily through inbound demand",
+                            "High-ticket positioning engagements sourced directly from content visibility",
+                            "Prospects arrived pre-educated, reducing the need for heavy persuasion during sales conversations",
+                            "Established strong authority within the B2B SaaS ecosystem as a recognized expert in positioning strategy"
+                        ].map((r, i) => (
+                            <li key={i} style={{ display: "flex", alignItems: "flex-start", gap: "10px", color: "#ffffff", fontWeight: 600, fontSize: "14px" }}>
+                                <Check size={14} color="#22c55e" strokeWidth={3} /> {r}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </>
+        ),
+        glow: "100%"
+    },
+    {
         category: "B2B SaaS",
         name: "Adam Robinson (RB2B)",
         title: "RB2B: The LinkedIn Distribution Engine",
@@ -73,33 +100,6 @@ const caseStudies = [
         ),
         glow: "100%"
     },
-    {
-        category: "B2B Consultancy",
-        name: "April Dunford",
-        title: "Establishing Authority Through Positioning",
-        metrics: [{ type: "linkedin", label: "LinkedIn: ~70k" }],
-        content: (
-            <>
-                <p>April Dunford runs Ambient Strategy (Consulting) a positioning consultancy company that works with saas companies. April built authority in positioning strategy by publishing detailed frameworks and breakdowns of product messaging failures. Instead of promoting services directly, she educated founders on how positioning errors destroyed growth. As awareness increased, inbound demand followed Companies approached her, already convinced of the need.</p>
-                <div style={{ backgroundColor: "rgba(34, 197, 94, 0.04)", border: "1px solid rgba(34, 197, 94, 0.15)", borderRadius: "16px", padding: "20px", marginTop: "12px" }}>
-                    <h4 style={{ color: "#22c55e", fontSize: "14px", fontWeight: 800, marginBottom: "12px", textTransform: "uppercase" }}>Result</h4>
-                    <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "10px" }}>
-                        {[
-                            "Consulting pipeline driven primarily through inbound demand",
-                            "High-ticket positioning engagements sourced directly from content visibility",
-                            "Prospects arrived pre-educated, reducing the need for heavy persuasion during sales conversations",
-                            "Established strong authority within the B2B SaaS ecosystem as a recognized expert in positioning strategy"
-                        ].map((r, i) => (
-                            <li key={i} style={{ display: "flex", alignItems: "flex-start", gap: "10px", color: "#ffffff", fontWeight: 600, fontSize: "14px" }}>
-                                <Check size={14} color="#22c55e" strokeWidth={3} /> {r}
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            </>
-        ),
-        glow: "100%"
-    }
 ];
 
 export function Blogs() {
