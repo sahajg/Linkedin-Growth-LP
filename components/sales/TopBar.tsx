@@ -27,12 +27,26 @@ export function TopBar() {
                 <div className="section-inner" style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "space-between", position: "relative" }}>
 
                     {/* Left: Logo */}
-                    <div style={{ display: "flex", alignItems: "center", gap: "10px", flexShrink: 0 }}>
-                        <div style={{ padding: "6px", backgroundColor: "rgba(34,197,94,0.1)", borderRadius: "8px" }}>
-                            <TrendingUp style={{ width: "20px", height: "20px", color: "#22c55e" }} strokeWidth={2.5} />
+                    <div style={{ display: "flex", alignItems: "center", gap: "12px", flexShrink: 0 }}>
+                        <div style={{ 
+                            width: "36px", 
+                            height: "36px", 
+                            borderRadius: "10px", 
+                            overflow: "hidden",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            backgroundColor: "rgba(34, 197, 94, 0.1)",
+                            border: "1px solid rgba(34, 197, 94, 0.2)"
+                        }}>
+                            <img 
+                                src="/logo.png" 
+                                alt="Davro Logo" 
+                                style={{ width: "100%", height: "100%", objectFit: "cover" }} 
+                            />
                         </div>
-                        <span style={{ fontSize: "20px", fontWeight: 900, letterSpacing: "-0.04em", color: "#ffffff", fontFamily: "var(--font-heading)" }}>
-                            DAVRO
+                        <span style={{ fontSize: "22px", fontWeight: 900, letterSpacing: "-0.04em", color: "#ffffff", fontFamily: "var(--font-heading)" }}>
+                            Davro
                         </span>
                     </div>
 

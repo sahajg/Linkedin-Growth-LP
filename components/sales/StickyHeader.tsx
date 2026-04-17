@@ -25,10 +25,10 @@ export function StickyHeader() {
                 borderBottom: "1px solid #262626",
             }}>
                 <div className="section-inner" style={{ height: "64px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-                    <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                        <TrendingUp style={{ width: "20px", height: "20px", color: "#22c55e" }} strokeWidth={2.5} />
+                    <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                        <img src="/logo.png" alt="Davro" style={{ width: "24px", height: "24px", objectFit: "contain" }} />
                         <span style={{ fontSize: "20px", fontWeight: 900, letterSpacing: "-0.04em", color: "#ffffff", fontFamily: "var(--font-heading)" }}>
-                            DAVRO
+                            Davro
                         </span>
                     </div>
                     <a href="#book-call" className="btn-cta" style={{
